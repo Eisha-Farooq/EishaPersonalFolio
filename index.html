@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Eisha - Perosonal Blog Website</title>
+  <meta name="title" content="Eisha - Perosonal Blog Website">
+  <meta name="description" content="This is a blog html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="hero-banner.png">
+  <link rel="preload" as="image" href="pattern-2.svg">
+  <link rel="preload" as="image" href="pattern-3.svg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="logo.svg" width="119" height="37" alt="Wren logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="logo.svg" width="119" height="37" alt="Wren logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link hover-1" data-nav-toggler>Home</a>
+          </li>
+
+          <li>
+            <a href="#topics" class="navbar-link hover-1" data-nav-toggler>Topics</a>
+          </li>
+
+          <li>
+            <a href="#featured" class="navbar-link hover-1" data-nav-toggler>Featured Post</a>
+          </li>
+
+          <li>
+            <a href="#recent" class="navbar-link hover-1" data-nav-toggler>Recent Post</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link hover-1" data-nav-toggler>Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="navbar-bottom">
+
+          <div class="profile-card">
+            <img src="author-1.png" width="48" height="48" alt="Steven" class="profile-banner">
+
+            <div>
+              <p class="card-title">Hello Steven !</p>
+
+              <p class="card-subtitle">
+                You have 3 new messages
+              </p>
+            </div>
+          </div>
+
+          <ul class="link-list">
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">Profile</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">Articles Saved</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">Add New Post</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">My Likes</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">Account Setting</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">Sign Out</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <p class="copyright-text">
+          Copyright 2022 © Wren - Personal Blog Template.
+          Developed by codewithsadee
+        </p>
+
+      </nav>
+
+      <a href="#" class="btn btn-primary">Subscribe</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Hello Everyone!</p>
+
+            <h1 class="headline headline-1 section-title">
+              I’m <span class="span">Eisha Farooq</span>
+            </h1>
+
+            <p class="hero-text">
+              I use animation as a third dimension by which to simplify experiences and kuiding thro each and every
+              interaction. I’m not adding motion just to spruce things up, but doing it in ways that.
+            </p>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email_address" placeholder="Type your email address" required
+                class="input-field" autocomplete="off">
+
+              <button class="btn btn-primary">
+                <span class="span">Subscribe</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="hero-banner">
+
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBgVFRQZGBgaGxodHBsbGhsdIxsdGxsZHBsgHh4dIC0kGx0pIBsbJTcmKS4wNDQ0GiQ5PzkyPi0yNDABCwsLEA8QHRISHTIpIykyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMv/AABEIAMEBBgMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAFAAEDBAYCB//EAEIQAAIBAwMCBAQDBgQEBAcAAAECEQADIQQSMUFRBRMiYQYycYFCkaEjUrHB0fAUYoLhBxUzchYkQ1NUc5KistLx/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECAwQF/8QAIxEBAQEBAAICAgMAAwAAAAAAAAERAgMSITFBUSJhcRMysf/aAAwDAQACEQMRAD8AI3V2F23YbYpBgAYYzJw3GZAxVLVhQ3rXYQvp2Dj0gEwcH1HgECKsatSyKHG9SYLIQDEjmBAyeomq5dSWNtio/dYQIYyD1B49vpWwcJFtUDgksTBCmYgcNKj7E8VSvOQWJtKRgBgWk5hflMDiCAKslSxXfbBiDuEwBzyPSTEwO5qotxBJKMM5APJAzEgQeRQFvh7SeZqi2wAW1nPJZvSvJ7B/yFaDx3w0XrL2mGSMezDKn84qv8J6Xy7CvBBclsmccLnrgT/qouzkma5+7/Jfn6eGaS1tfb6lIxET2B56yBz2rQJAMkBgWElYBAOVJB6yfaT1q18V+GC3q9wMC7LZGJ4YfmZ461UDRB24VsXF9UFgDGMjHX34rfm7Gdixp5jo6EMOdjcZ+uVnhhirv+KAkB9wCrhhkAFcCfT95H0obp3DAYnDj0EY+bpwZxyB0zxTeezMVJyVB9SwZU8SOOojjNSQYLEEjyzt2crJ5UHkgj2qWxfUBSoMgmTuSR6oxC5MjFDGcrvJVlO0ZXIMAZHAOc89PtUzap9qkXXMTkdtzSYBMcVVeLNgg2nK22xsHqcTMEcAEn5gPvUiOsuBaJwJJkdB1IHAobY8SdbTr5j+pgZnOJJALNk4HNK2rbmBDtz+ufwjgQevTNAZTVEGS6oYGBE5EfhHvIz3qFCN3zNc9PPy4x0O4nJ/Wq9q0QQSiiYEmGJgLMZJHXpGKka2ArNvMQFhfserADCnA70VqS0jR6rYUlVEEyeVx6uueg602pmSCxMhYCkgDAJHSPlOY610LQJci2G2gQTGfmXpBHywDNWGVvQvyyxMJMwoEAsME5jLUQqOmSNu1GY5ZuYyRiOhnNSaewWIU3Nx9RIXpOOTyInp/Kuv8OCjEL0PqYiMnMbcSY7mrYZQ0zujqBicDjqaVMEdHo2EgiJHAKnEfXihfiduLgU8g0b0zsTLR9gq47wSZ/3ql45pT6XjrB/lVOovzVDWW4Wrvh54+lcalfRTaRuKzXGIpVyj1MBUYjUflinXSzMDinbFJNRtBA60Q4fSSJArtUgRS81ogVZ09xNsHmozbqbaqgGpBSJ5iuVmrISRNKuQaVEMxqWXdKsUItmMk5MvnqMkCfaqQsOUH4ju5EEqAMTtyeT80/rV+9cDqxt3Ld8yBAgt07Q4wvMwd1VG0kMnoYQJz6sTuxMQfeT966Wam4QMxLOFWf3TgEBeSIMTUVgvcuJbFx5cqo5EBpYn5ziPrwe0VJfknLP83DyY6YxB5M/Sinwrpd91rsgqnpEQBuIEDHUKT/8AVUdXJqZ8tjbRQoUcAAAewECnFsUhbpbDXM0Zv420W7T+YI3WyG4nBgEcccH7VjtKgJwpQllhhxAB3fMfUMkcj5a3vxFqUt2mRmG64Nqgz16mOBE5rHafSkHzEcrCkRIIdjIVdpGZY9j1rbj6Z9faFNI20kLI9UtbkYAMblIGTkSR96kt2dzchgF4aZHrkL+TYgnmpS5UyquhCZ5jdMnrIIH9KcXCQxNssAR6kyCFEeqOsZ4Bmc1ohxfAUttdkZVUQ3TjkLBzPUHjmo1uKBtLpgE5QknBYjCZGTietcvemQLnBgi4J/EOsN947VIllckFPl6kdQMncvXdVUxFbYFU2XAvqPyLEg7emMT37mpberRlYl3YllENA/fjMkgEDt0qN7gVFhkwCfl+vVV5zNQae6dqKu7DQCqGOgE5A4JP1BoDZUFWPlwsj5icH1T1UAZ6z0rq+phyGUHcOPmwWHKDkfxoba12H3JcG5yYFvZz3OYGR+lFE1mH8u3H+Zt0EgMccDuJ/jRWplCS5JZjuUx15cgDqeZ46n7SNcIIIXYF3AAgdCDJ3SenQdKifUBwVNxRLL6UAJOT+5EgSOT095qXQ2rZG8LO4Pk5jLT6RIBjvPXmiXNp4O6dwUQS0wD82O/Ptx1q9otP6ASWO6RmJ94jgSBH3pnAG8syswQMFGR6RByZHJMie2DVo6iGXG6443Ik9OGA5MwQQPce9QnTaO4JggEqSpIWcdMn+/TV+8m9CIzx05Axx/eKE3nFu8VMAPwZkAiJgA5M0XsMSAM/dVE/TrH9KipAX1IdDHTBHYio9M+BVDx621i+xUEI+Y9/xfr/ABq1oHDKCDj+FZ3nF5dGEep0egw8Xt7giBrjHgJtg/QsQD9pq6NU6iWsXAPbYxH2Vp/IGnrf0WxeD96YwRVXTa63ckIwJHKmQw+qnI/KpVIMxVLqZiW2wioXYjiobt3bzUTXetE4u2r+M1Kr0OtapZiiiaWQDuqUY6pVE97aY5pUMZjXeHAgBtOeT1/ESIIkZ4PWn8R0puPIV02rtAYlA2SY9LGQAO35dKVi0rAMimBHq8y6UyzHLs1tJ9XALVKfDmgiWiZIA2QBMmSm89xyOc11OcN1GndSYIMAn1BT8wz81tiD/T2r0HwXQC3aVZliAWaNssQPwjC9BHtWWt+FJK3FyFIb1FiDnM9Pf361t9NeDrIP1Haeh96y8jTg/FR6rUC3ba4x9Kif9vvUlzNZj4u1hUW7avtLHcSRIheAY4yQeOlZ8zbi9vwA+Iayb6F2W61w4UgDaDmFEyMCMcwO1R+K6l0tWybLBTdZ2CBpAUYJB6BjMY/WgtlFa55u9CxeBsBBCgZ2hlHUj8qL63y/8PbYXGKj1FYkiXbPzcZrpxhV3wrVElmlmAtkFACPxn3hmbiB7VXS2hhZKP8AM2SQoG8Bs+qcEx7+2efDRuQckO+GIgwpkBh1G4zzPHtU1pvM1ZDXFdVAXhj8gbgRxzwaCO9YkbgysGCH1AnH/aVJAAPPTk96kdHaQVQCBmVTscywgx0IFT+NnbY9SwQ6H04keYoj1c8cAia61ZXfbPrgTMoPxJAjOc96qnUmg0G0ISEJ/wAoBgQxwVDMT1nNSpKW8lvQWMkMpgR/7m2cTxUyWogC4wXYRAB4Bbu2PpVDRXrZRiVLMpcchTEkcmZ+VR04ojV6ytu6p9QIw2SfeOAwztGcj61TazaFtnj5hvAEMCfUAB6V5x061e8FQFLdxEC+ZbWASOBuiAx44/Oq2vuva0jEKqBLgAgLxvWICy3E8UFq06H0BSuxyCzgcsq7WWcFZ3DjkH6njSWwouhySVuAQM7hst4ljnDR04/MR4dqQ+rJcl1e3bSOwEmZIk5boBmjA1G3VG0YQPbtkS0knKmDG7hRxRApobOBA+UMJYDKtg846A8Yg8TQrVWnNuLdwq9ph6/Y+koIzBx1zAmBRi2q7pO5yrbT0+YGPc8nt+lDdU2y6UIO1vlUA/NhpmcEmDEd80Ty400X7aPmAQ27AO4fMB2xmBmtR4eyFRAH8f1NZTQDbcIJB3fgTgN+6SMfYdG5FaD4cstvdXwFYgDvwe/AkA+9c3m56vUx1eLrn1srn4n8K82y20ZX1AfTmPtXmZ8WNho9RG0sQvJiQAMj+I4r299SsekBvyivGv8AiM9pdRaNqz5N5S5ZDG152xG0xtf1AHBkEQDBrTxWf9d1n1Lm4i+FtQj3DqLVtSzMQ4ZzuicAKTtB2gRGOPttdT4wiILhVmTgsokoezKYIryldIW3ajRZMftdO3zDv6fxLPbIPEH0rpPDfGFV2e1ue2yr5ltokYhgy/hZTIyIIjkcb/lm1/m2dSm5CGj8QG10PseVP95qHTay5bfyrvqJny7gEeYByCOjj+/fIajU27dxzpbrhSIOGUjrtkj1R0I96htXn3i4GZmBBBJJkjMSeZ7VHXMsOesr0Z7QcTFUdQhPAq7ZRuKZ02VzNw1LIBzRJNR+zCBjIM/x/rVZrZPNMNPt61GpXEf70qraZ+RSqQCtakFtzXGCqMP0nqtsfhxGeTzxwY0Ost3PlTy1XA4M+4P4mOMjnnrJCeQHCll9GT5YkBh0Kjp7596sztGRuU4ABgL7YyAfVkZYjvMdDlHVs7o2gIB06NHSIicxP6cCubaNbJdJE9CSZ+oP4cc89uKrWtQQBuK4+XmAAYHB+SePv9yWkvkkSVLsRzx0Hqj6iB/tSp+l3T6kuBuXa3Y1gPHtf5mocrcAVQRtYSMQuMEZJ9v4V6CyAH5fUfUcGJjMD940A1fhAUkW7aOpYBvQJEvcnPJAgAdo+9V5kl1a9bGPSyYQsgAlfUjCZLCOGK8R1HNX/E3ZNGWLIVFswWFvcZBKzPqn+nJohqtIqgbYTc/ERI8pBA78Ewe5ql8SWQ2l8vYV3G2pImArFFJ44APHtWmq1L4WDbsqQULi2rOD6ZYiZEwIBI9xJqhpbRRmZkGNikqJifmn1bWzPJmijyQAEkFhJUwYwCWIByAD0B71Ws6VWEhypO+ZIIIjrC4BIPfEigXjpPkNtunb+z9LAqB61J4nHv8Ab6LW3HYBgyAjYZ2iSAAf3ZjAxFTeIWHNt18tDGwBhOdpBztYD8IPfNVLmiMKSizsB+VjwgBk7onFVQNpcuej5fVu3Ei3n5un1n8jQBNUQXUXIzkLjAIJ9QEdD/Zo7pLVvy1Z0AcbYXcJEtBxHueZz26jNXYmHFtVAb1boBMmQTu+rAx9qLJvAr6g7CrHa5AggDazBuIOJY9c1a8Yt/s7ilNu/OSIHBYwwGBBOe3FC/C2KXGHmBZGI3fhkc7ROSPy5o9qbK3AeSJ3ECRO4AZg7uo6TRGM74USt5YuARiFDjgxyFE5iuvixCmo091F3lS6EnGDt2kDd3nkzTMr274m2ilV2iGbJRiZgsAOQPy7RVz4wt+YlveAZIgLtkMUJnAMDcP94q35QMWbzMkm5tleBmTgn5fT0zJ6mrDbTDTBIgtxxxCgZkRiY9POKz3wvcueWm9DKMyklSTBJPJxGeoo4j7R5bMGIJO0zAkERgbYIj2/OKionxUIsvubZCrIIack4kSPuIHtmKtt4itu29xQY2kFmiQ0wR98HnOaqa4r5m0OWIyig4kASMGD1wOo5FCPibWC3ZPmMIYCLYhYPBwDj5p5nAn3p1zsxtxc61vtHdAtKcGVB+grwv468S8/WXWj0g7B1wnpP6gn71rtB8RFtEHByLbTPdcY+pWvLlYsxJMkkknuSZNZeHm7/nw6PN6yf78ieiumQxZldfluKfUMRn98fcH3jFWbviju37S1b1BHDoTbuCDj5YbHsCM8mq4WEoa6Sa6nHfto7OqDEQmuBP4ZD8+7Dca0Pw34bcuvvWy6IvzXLrFmIXO1Q3yk9hI4NVPgzwzfaRhbUnzAVKr6pW4oy3TGI4iSa9R8D8PNixscJvaWO0Yznrz9e5rHvvPiNeeJntUVi5PIru4g65q55ImQo57dJaq22ax9VtVW04moLunkxRDy6bZFPU0PGlUcU9Xgo7U1T600L8Q+HUabluA/O0/KW6GOje/HcVnkvulwhxFzjawwW6E4g8YAwYma9Aof4r4cl4QfS0Qrjlf9varc92fat50Bs3IyPUw5SRKEzkGJ3e/Sc54th9oCqZYxkz6CexyAYwTx2OKz96zd0z7GkdRcBMEcYPQdzz3q7o9ULshDsJHqJwpjEDuCemZJkZgDbdZWYN29MCoUeoGDuzhgRBA9u3WprFqRtmEHL8b/AGOMew/OhunAZj5YZEHzbuvPqnqMH0zIj2NWkdWUmP2S52gSST1BJy3b93riioX8R6G44LW1UKhjZwTMCVgZYgTBn7dQugXzbaAoxZWT9nHVSJBO6SRtJ4rdqhuEQJThBHscA9fc/wA+Kuv+GT5guI5BncywOQMbDgrmMTmq9eSc/Fac8XqAuvC7mUF0KjbAG7J9PcA8tg1Yt6d1UDdvAhQGUgjvjpmflPUVHqUf0obizvyLi7jtX2Zefm6xgVK+oIAZliZO9QIkz0Ig/KOCBmp1GKutdPLkSDJP4SJBHU9YJ71VAQCPVO0tMrIBXEwOfarzqu0L5hgKWlgQRhoI5z3inIZlP7QfIombkDAHJAKmT94zUorjRXCAjG8yLjBnGQQMYAzTXraFT/6j5ImfUQJxGTIkSI9+lOwbap9GCclk9RIB6kGeOcnrFToGUNJVNrR6dpwZmdknnoaFBtIn7QNsQSJzzj2b1cg0e0zOGQkokiJwCZBWPSZ/OOtAb21CFCtutkiBE5OYhSSD6oz0/Ivp7i+nahYiBJk+/wAqgQcHPvU1M+lX4htqwS6FLbJVjgAgxt6QBugT/m9ql1y7rKsu4QuXBJICs3tHXkZPSrNy2fLdC+wCVCrHY5AXrPUkn2qteKlVtszMwViRkcHieYxxE81Cqp4OyC46yfwuAAAM9dxJI55itFbkFiLe0FZDMepGctjp0GKzGgci8NzhJVlKwAQw91zMFTPOK0UKSp3M0GG6TweSM/N2zU1FDnO25AYKOrgEEzBgTnETAHfmsn8WA3XSxbDbcszNgkT2/CPr2HHFa/Waf0AlQu3IUyJaDOeW55wMVl9abp1DkAQuxdp2xBDNt5nj+VQvEPxDo/K0CFDG3aCo/wDbYkAk9t+37k96x2gtSa9b0eos7ns6q3Np08u424bUVtu0iMrB256RPSgHivwHf0hLWwb9k5V0EkL03qODHUek844pKmslrMCKohe/WiOsSTXPhnhDalmCztAywHHt9at1cmo5m1u/+GXhjIz3nRtpVRbnEySWPcA+n6x+e+vc7Tzz9JzAoA3xHaG2ypCuNk+krPfnnt7UaLkkGuOS27XV5OpmRKkrxXININTE1dkeaYmkRUWodLa7rjhB3Y8/QcmglAp6zur+KkBi3b3j95yRP0Az+ZpVb1qNas+1c3rcQTVdr4qTdIyZPvWeroNZp7d1CtxQV5z09x2Nef8AiemNtzDqUBkQpmTO2eSW6H64nitn4rrrYRgbgBH4Zgn/AGrN3dUkekiCCD1me80nd5rTnxTqfKtpfFTc/wCoQqqZ3LMzPP8Am+o4z9KNaXVb4IO0Y2osQ3XBHuYJ/nyJXQ7l8zBJEjofSYH/AHc/194tJCPLMQw9oC9OOB/fHFa992c7Ix48c67y3HpXhdhUG4xvIExwo7AdBRLaDWJ0Hibrydw7itHoPElfrXHz5dv8nT34Lz88pNf4TbuiGGYMMMEfQ1l9d4c9gYuEoAoUtOMgQxXMc9IzW3R5ri7aBBBEg1vLZ9MLJfivPN0zFtXgQCCQIIXJCmAMtyK7vapFQ/s1MrHJjcIx83t+lGfEfhtTJtYPOzdC/wADFB7/AMP3CHXy2lo/GrSZUnJwFwen2rTnyc38qdeOh+otfs9ptOWlZWTtyDnvERyxq34VpmuE20tTIXMkgTHzNOOSYovo/hPcV824doA9C+3+eO/YVrdHpUtoFRQijgAf3NPeX6PTPth9b8M6sXC+GTBhCDBAx6YXr1yeOahu2UQuLnmHcBAdYIhlXAwfx8GvQ33fhj6Gobjqw23EEf5lBH9Ke/7JywunSyA8H8IMllYiFDnn09+JpeJW1Te4uOJWfSBks5Q4AEkmTk8mjniPgukEgDaGBWEIAA27YAMgCMVmPiPXW/KW3aub9z7SylGKevd+ACCSOJwanjyTq5Drx2TfwG6MFWWLcw5yQeokndIHTHatIjNtc71QSIIIJjA5WZGRyRWZ0yru3Sxgk5PUdeTkZ+80W1filuyjXXIVdv4syRwIGCeDEGtaxqzduBQwA3uQCCeckTI4xJ5Me1C2trucqynO9vSvI3CQedx3j2kfnltd8XPdMWLDOMgFhtUccBfp3FKxZ1V31X7m1efLT0jiMxk/nULQV1+oW5fKKBgLuxgkKoIOQDkRyeK1XgHiOotAKrSOiMpKjE+kKMfYj3FeZ62z6poz4R4/dtEByXERJPqUex6/f8xSr+rUeI/FSs+274fZZvV6ngiFnOUJgxHNVdD4kty4lxkCECQiYS2p4AQCJIg553VLp3s6idm3cTJVgATzyoEtk9/uahs+G7bmY3TwZB4OWBHA7de1Jiv0h+PHS35F8KCA8HpuU4/jFaX4d1ou2gZAYfh5gdKi1/gtvV21t3LZYA7p4YmCMjtn9BU+it6Pw+0Le8s/WPUxPuelY2ZMi+78igtE+xqvqdTbtCbtwL2HLH6KM1m/E/iy7cxbAtr3GW/Pp9qz7uWMkkk8kmTUzn9jSa/4qbiymwfvtBb7Dhf1oJqVd0813LEtGZJ69T0weKpzUnmtt27jtBmJxP0+5q6HApV2FpqlL0CztOZzS1OsCCSM06WAgmgnimpbzBBiRz0+lctb+Pn2qHXMjDewhm6R/PtQpre4gQCScCO9du5J5np9Ks+EIGubt0KoJBzzwCYzEnpUczbjp6s55tFyihVUHcoXaSv4D/Ge3T3oXrNMSCGcBYxcMSB13RxMxB4Jq7fuN5gRUl5wuFW4pM9MNPPOYnpUFyCTbC/MfWjE42gzA5+3PHIFdePMtZm7r9TacNbUMrHIyVjqZEgfb7zzR/wrx1Li7iDbYYM8T9ft1iuV09kfI5U4AOYj0jBAx06fhPvU3hVhbgdtu9d8blOIUCAYEzgYPes+/Dz0148/XP8AjT+HeLkQG4/e6f7Vo7T7h0rzE6DyTut3HQEn0sN6nJ6Y25MYg4oj4R8TWWfyxdVXkgLuENH7vf6VhfH1x/cbe/Hl+vitw9vOKaKhsaxQuSJqZLwNUyFnUSIpqeZHeqN3U7RI479qEaz4ps6Yg3X2hzAADMSfooJj3q3PUlxW8dWaODU2wYkD71JavButBP8Anmj1O635iMeCA4VlP2IZT+VYr4o1Gp8Ni7p73nWGcLsuHc6MQzEEzLLAwenXubzbchZM2y/+tZ8Z/DdzV2Clq4LThg4PR4DDYxHAO7nPArzvw/w+/ple3eQI29dsTJiSYAkMPcCMRWz+Hfju1fAFweU/EPEH/VwPoa09y7ZuKUYgxBIwWWeCIzHvVuL63MV74t/thdNYuiALhA2wTkTzxwRyOnSptR4PbuENdG9gIBckxPaeKMarRC2whwytlSO3uKSJXTrH1wC/5Iq/Koj2GaranS4xWsNuMERVbUaVW9j3H95powGo8Pk8VEujrZHwtmcIACWMD/ftT621pdMdrnz7g5VcKp7E/wB/SoW1mtB4RduH9krEj8QwB/q6VpBct2VjU3Bdcfht88/jfr/fNC9f45duDaCET9xMD79TQk1BfkZ1/wAR3HG1P2adl5P1bmgpamNOltmBIUkLyR0+v6/lTEGmnrmnmiTiu1FcCivgnh3nXApMKMsew/qai/AveCeGKyl7gkHCj+J/lSrQmwFJUZA49hSrP2SD+MeKSxRDO3t1PWgV7UE8/wB964J/vvXBOJic1huvS54nMwnuSI+kn2oz8Pn1Oo2mUiD2kcHoffnNBEjtnv8A32oh4PqhbuKTwQVP0PfH0q/F/lGfl53mxc0DftHCjf5cEBmliCTuA4Ahl5M/N71NrNMzlmtkMV3MyH0t6sKFLGOhH8uKuabwi2l9rxbJG3bwRMfMZieBx14qbVeHh8q+15A9LTxnPtnrkV168xnbNg3I9cbQZS4owTMCD9R2q5ZK2LR3LsckA+WJnEyNzCeBxVx9LcbaHtq4xkHIHfv9uMdTwyaS41xCzrsWTEEmMAA+nsp5qVazOosXNSVBa6UDABVMCJgn1BuSR9hXfh/whbDAsgADH8QY4A5MQOvGfzxslselZlhkkSY7/KPp1Ip8BgoMHa59Hc4jPso7nmo0gXpPD79sLsufhJKOC4GeAS24EQe4zVhr2t4i0veXYwPptq21xgBPpHAAMnsB7dOwzTBiIgBP1PWc8DnoKy68fPV2x0ceTqTNVfI1L2yly8EDAtuVYYAEEQCWkGP1rz/xm36toLXCDm4xIYjsCRIXHEda9DutIj+z9e9BdX4arGaSTn6i83r7rCabwyWG8Ar04n7mJPX860Om8EwNiLHsBVw+CwcMaIaHTtbOGP8AI/aran1k+kGm8Hbqi0U0Xg1pTuNlN3faJ/OKI6a+rYOD/fFWTUfaL1ivbsqohVVR2UAfwqdaiuXVQbmYAdyQB9M9fbmsn4r8bosrYTef32lV+wwzf/b960k36YW/tstTqBlmIUAZkwAO5J4H1rJeNfGlq2CLYN1vYwo/1EZ/0gg96y2qvajUMPNZjOVTaffKW15656xzUGnsLuMAEdGILTnPUeWwGRIJxzTMQK6HxrVXRvuPtB+VEG0Af/k3+ompQajRa7qEkaanpqBiKmsanYrjaDvET2EEY/P9KhmuWapw01OKhN0Dk1a0mne4wW2pYnt/eKipPYtliABJNbTQWltIFBE8se5/pXHgfgfl+u5BfoOi/wBTRd7C9qy66WU/OXvSq6LK9VBpqrowK2HidpgECOskE8cniodhOYOOOef7mtQ2rQ8XFBxw+TG/rEjkZHfFdnVWxEXAPVPPe5J/T+NZerv/AOS/plblwjkEn6e38aru/Wj3jaTaDBhBZIwR/wCmB2rO3JiBBnsf7zU4mdSxYteN3UUqDIPfkDghT0B6/Si3hvxFJgEA5JLEDmN0fujGB1P1ArLamR3EfxoFrbjNcVRiCGP24Facd1zeTxc35ew6fWtgJtEbgzn2gjH4d04GT/CraXC/qwQFGThZxkjnMHBP2rzq2txlBFwKuCAGxPeBkmY6VKvjd1IVlJC4GwETu+aN3HMSZ/St3JmPSkIbdHIHQAASBjdHEk8xT71AERMTLFjPABweMCsn4Z8XLk3ldEAgDaY9gD3OTPOBVzRfFtpoDOFCwIxJ3HHWTAMnd+tQvMEwu4D0WwxI/EcYMx6uJ6/0odqtS1q4QAzpJkCC1vJmO6iOD+Y4q/a11q4pKn5SP8xPcieenbmpNdofNTJDK0sBIUbsY4I7/l1qRSS4txQyMGU9R/eD7GmZaHavw6/abfZtiBO4K2/dHcYED2HerPh/iSXSUKlLg5RsH/T3H955qLE89YlK0wWpr7KiNcedqiTtVmP2VRJNYrU/GvmEW9Oht7iQtxgrvjndbGLYM4Pq/onFqb21es1Nu0u+7cRE6FzG7/tHzOfZQaFaj4yQL+yVnnCMwwxjtMrHZpP+Uc1l/GfELTi2LjF7q7t5Vtzq0jbtvScKwP7306itppKsbc20iLh3lScjIuTluuw/kel5xJ9s71aK+Ia9mI8y+IjaQQZJEGGMABSeh2r/AJRUDO9x222gpmSygb1ncZk+nZHX0njJ61zsALAm43qDOARAMiLiYLTj1DaM/irt1LCHISMBIZgBJO60i+pY5yB9TmrKu22jcxgrO0bfMFvdHPmOdysecQD3qzpkhQOPaAueswfVmfUckflUVhFOYViBh2BY3MmSCPSpEDkFs5M1aQVWpiRVPbjn2qS9p3UlSpkQO+SJ5HsaIeD31VX3OBP4SYn0sJ4z2jjM9qJHX25/6in1IYniCkwI+pmqjMlT2P5GuGaOcVov8cjqV8wFisDJOfLzx71lfGNSW1FxUBY7yIAk/pUwO14Con1HQAsedqiSR9KuaT4fuXM3CVxlVjd7GT6QPzNanwnw23aEIoBIgkCX/wBTHJOOnemwBNL8NeYm66doIlYzIiYJ6N7UW+GPCjaZoJjgCD/M0XFmeUCmBO4htwzOB+Lr8v8AGrKPbCCGJjMx04IzxxP8s1Xq/CYtoa6NQ27giRmpi4KDvP8AXr+VYrmpVwTSoPPUSOaZu0n39qtMo6z/ALnIqBrciO+Sf5VzvUiC5fcgSzFRxJJ/LtVa62JMH++n3q3sk8dgPrVXUKZOIC/3/DFXiln9B2svbAWPvweYHTvVNULTd25wMn7CAP4VK1ouxYn0CevNdamQAoxGT9avuRl6S1e+GtUGm3t3OJZZniRPpHOfejd2+yj1ggEfhjEgzIXAPqHJ6ViEuG2yssyvPSQYkfSvQNBqluBTbUkGIZoMHqM+kcn71r4+tcvl8frdUrn+HGdtycj1grkKB29RERzU1nwdHO4bFAC4HJBOeDPEc454ojd0ikwR5jkEnHVIyIg5B9uOtDb/AIcAxZTs2xCrA9JyQQMdfrPTvowlPb8IGTb3Tz83AyvA4xzzRG151oAG5vCxtUfhBypMCNvcCefeh2nfUqBDejPzwBkciAJnPyicdKe14/cWALBkHbvJA98A4WCRBiTtovrRW9VdmLgCKTAAM5HBCkYGDn35pr+iS8qMVAgbS52gjbx6ukxwsccUGb4nsghnV2cjiJAPBO4cjOfrgmrCfElojdduFRHyRkYk7RnaMAn6UFlNW9tzafc6gT5gGYHM/vDjPNUvFfh9bqm5pmS3cMncFUq5PVsc9j0NWH8c07W4VlVV/CCIdcdTl+334qtp7vlsWsupQidhYQY69kx/fSn0fbz/AFmgTSlluh2vSdoKHYx/e5ErPuSf3RUmlW6wJut6AJNthLRxKWxBT/u9IFemI9jVoV/EJBAMMh4JVhn7ish4n8MtpyHZ3e2G9LqpL2xk5IMkE4wPuvNXneqZihp4DqLKw3q2XC24XFzILqFNs+oyYHOSK7VIkl2dwAVVX/aLjJ8wfOnIgbjHUZqoNTcuXHayoSyY3blVEPE74wc55JFXn09tf35BEBh6RjBttEsnaT9utKOrCAAAKqj/ACgifcySSfvUu6oVeuXumQoBLHgDk0SlNyqWt1oUgCWc8Kok/kKM+H+CNc9VxigESBGQRxPQ+wBNafwzw2xp5Fq0oBg729TSR3bmMD1Tye1V3Bi/CfANZfPmHdaXHymGIPuDArYaDwJLcDeAXydsNJk5bdhj9SYoqycNJ3fiUdvrx7Y6VKqdQgVZBUs3/wC0DrER0FLTEFnTDpbJ24ljO3rIx6evJ6RVpzjNz1DoomV/QH8+PpVe7dkAtcJMwyrPq6deCYB46VYQN0UdwSRJHWCcDvge1VDWUETbTBMhicD8wAOvM10l4hRucLHzBZMGcHMCM55E96Z7YhSbjPugYAgdhOAB9uDU6J6ZVAo4M5iPrigDeLoR6kZjMggCIP6z/wDyhVnWOGC7mY9Z5Fay5baAdyEjsAM9Ij2qi1tNxaJbriubyeO3rZWnOA3ix1CbWWSjcRmDSo2mqxHTt2pUkxZj7iSQB0En71KwEY7c/TvVM+Laf/4i1Mc71/rXN7xbTkYv2xx+Ne/15rPK9D25/ay7R/GO1C/EVJ9IyWP8f9qk/wCaWACfOTjHrX+tQLrrG5j59s5MepR98nrVuZVeu5+K70mlBdEAMTHMff8Av2ql4naCXHRZIBgE8981PqNfZ2wL1s8/iX+tVfNsxJvW/f1D7DBPY/l71N1XnJ+VY6cctjBj+/rXWl8R8lx82wwSAcz1I/vpU9/V2mP/AFLYEfvLiMDrz/P2qjfuW/8A3EJzwy+8Umz5h169TK3vh3iSFJO1EYgiOXUCIHVpWfmMY6cUSUo6DaFUZBeQY2ktiBAORAAkTM4ryrSeJeSZVlZTkqWHOMjPP9K0On8btkBl1KhiPlLKoHOPVgc8DGTXTz1scHfjy/baajSgGZ3/ACzPaIHGT+dJ/Cw5KiWJcyAAB15/eiRwKzVv4nQBd922Rj5XXjBON3OBk5x14oppfi/TH/1kRe25Z9j/AJj7Yg9hVtRF1Ph9dm4+ko+IgzlQwnpgmcjpzFV7PgVv0FbfLNBuECZ9j9x+LpUun+LNJO1b9tdpDBmdBP7wknH0XmOSasp8UaIQ3+JtMR1Lr1g+lSeTHJPXpFNA6z4Bbb8G8kEHBC8Rk8kZPaudR8P2wEa4obbI2KBEHb1GFjPefrRlvifRLAbV2mOCNtxTB+sx04FRr8RaMoS2rsgj924kkD79o5/KmoBF8EFtgyA2ipMwDJEEzEzMjlqLaPxgj0XhAJhbmIYRMsOeOoH1iuv+e6Ilo1WnHJDG4hImD1OT7AUL1Gv0W4OdTaczJm6pxwcBu3SftQGrng9jcbrL6duRuOwqM/KDBH6ViPE9b5twtwshVAgQswB2FW716yd6nXWQhyES6sHPX1bRjPBqPQrpd6MdVYUQZm6mPzMiR2pKJj4C5ubJ2IQIZzniSAIBJ+1GvDPBLVuUlnfBDfLnp6jkTjFQt4joUI/81acg4i4gGMjM8kYzFW9N8RWCCf8AF6ZIjJdMjP8AmLE/1qdQK29PtQOoRWUQSfyk7geY6Cu7aIWglnJhl7fac+3HWaor8QaFTJ1dpwRn9qg65MAyT9xUqfEul4Gs0ygcHzU6fQzVQRcNErCZAJIIP65jpiK4e2pOWZ+oBxxOJMkyIqmnxBoQZOssMGHq/aJzjOWn3p7XxPo8AarTLtPPmp7zBZp5zjvQEt55CqqmAZx95OfeBzFdJpV9RLMxWCDM+8SwkiR+tC28f0MknW2SDk/tU555Jx1jB5pv/E+jIn/E6eT6TN5D7TJMdjwKAsEJkIgU4aYke+TgH8uBXKL6vW5kgQZDEkH+o6d6G/8AiXR4dtZp+uBdRjH2P9zVR/ifQiCL1lmRiRNxP0yOwyaA8HVYEEzjJnI9l6YHWqjYJgfQ/wBe1U0+KNNmNXp1E8C9aXpHfIyPyrm78Q6ST/5zTlTOBeXue5x9qr1NiZflZa1vyMUqHp8QaQcauxH/AM1P60qx9WmvAK9B+CfgRNZaTUPdJTcQ9tUZYElRFw+nfJVtoB9JyRIFefVrfBvjzU6Wylm2lkqgYKzIxaGfzCJDDG7PHX2Eash7T/8AC3eqP/jAFcLBNhxLMVUQCwJSXWHgSJMcSM8R+A/LtecuqDodO+oX9mVJVRpSBBb0kjUj6bPfDt/xO1hIOywCGV8I2WUo0n19Sgn78Yjq38cK2guae6m66bfk2yqqFS3s0y5YsWk+QCQFgmM9AGEpUqVA9NSpUCpUqVAqVKlQKlSpUCpUqVAqVKlQKlSpUCpUqVAqVKlQKlSpUCpUqVAQ0+ktMqlr6oxmVKtiCYyO8D86lu6Gyu//AMyrFZiEPqIMQDMffI+2antePwqr/hdIYVRJsyTt5JO7LN1/SDT2/iDaCP8ACaUgszZtsctuj8fC7jA4FBAugsYnVqOJ/ZuY57c9PzPbNTWWbax5dzfMz6SscR1M9fy96JP48p2n/CafcC0/s/SQSpA2giI2nqfmNUvEvEfO2/sbNvbP/STZumPmyZiMfU0A+lSpUCpUqVAqVKlQKlSpUCpUqVAqVKlQKlSpUCpUqVAqVKlQKlSpUCpUqVAqVKlQKlSpUCpUqVAqVKlQKlSpUCpUqVAqVKlQf//Z" width="500" height="600" alt="Wren Clark" class="w-100">
+
+            <img src="pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1">
+
+            <img src="pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2">
+
+          </div>
+
+          <img src="shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+
+          <img src="shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TOPICS
+      -->
+
+      <section class="topics" id="topics" aria-labelledby="topic-label">
+        <div class="container">
+
+          <div class="card topic-card">
+
+            <div class="card-content">
+
+              <h2 class="headline headline-2 section-title card-title" id="topic-label">
+                Hot topics
+              </h2>
+
+              <p class="card-text">
+                Don't miss out on the latest news about Travel tips, Hotels review, Food guide...
+              </p>
+
+              <div class="btn-group">
+                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="btn-icon" aria-label="next" data-slider-next>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="slider" data-slider>
+              <ul class="slider-list" data-slider-container>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="topic-1.png" width="507" height="618" loading="lazy" alt="Sport"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Sport</span>
+
+                      <p class="slider-subtitle">38 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="topic-2.png" width="507" height="618" loading="lazy" alt="Travel"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Travel</span>
+
+                      <p class="slider-subtitle">63 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="topic-3.png" width="507" height="618" loading="lazy" alt="Design"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Design</span>
+
+                      <p class="slider-subtitle">78 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="topic-4.png" width="507" height="618" loading="lazy" alt="Movie"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Movie</span>
+
+                      <p class="slider-subtitle">125 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="topic-5.png" width="507" height="618" loading="lazy" alt="Lifestyle"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">Lifestyle</span>
+
+                      <p class="slider-subtitle">78 Articles</p>
+                    </div>
+
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURED POST
+      -->
+
+      <section class="section feature" aria-label="feature" id="featured">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title">
+            <span class="span">Editor's picked</span>
+          </h2>
+
+          <p class="section-text">
+            Featured and highly rated articles
+          </p>
+
+          <ul class="feature-list">
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="featured-1.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Travel</a>
+
+                      <a href="#" class="span hover-2">#Lifestyle</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">3 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Joseph</p>
+
+                        <p class="card-subtitle">25 Nov 2022</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="featured-2.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Joseph</p>
+
+                        <p class="card-subtitle">25 Nov 2022</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="featured-3.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Joseph</p>
+
+                        <p class="card-subtitle">25 Nov 2022</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="featured-4.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Joseph</p>
+
+                        <p class="card-subtitle">25 Nov 2022</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="featured-5.png" width="1602" height="903" loading="lazy"
+                    alt="Self-observation is the first step of inner unfolding" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#Design</a>
+
+                      <a href="#" class="span hover-2">#Movie</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">6 mins read</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Self-observation is the first step of inner unfolding
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="author-1.png" width="48" height="48" loading="lazy" alt="Joseph"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Joseph</p>
+
+                        <p class="card-subtitle">25 Nov 2022</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">Read more</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-secondary">
+            <span class="span">Show More Posts</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+
+        <img src="shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR TAGS
+      -->
+
+      <section class="tags" aria-labelledby="tag-label">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title" id="tag-label">
+            <span class="span">Popular Tags</span>
+          </h2>
+
+          <p class="section-text">
+            Most searched keywords
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <button class="card tag-btn">
+                <img src="tag1.png" width="32" height="32" loading="lazy" alt="Travel">
+
+                <p class="btn-text">Travel</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="tag2.png" width="32" height="32" loading="lazy" alt="Culture">
+
+                <p class="btn-text">Culture</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="tag3.png" width="32" height="32" loading="lazy" alt="Lifestyle">
+
+                <p class="btn-text">Lifestyle</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="tag4.png" width="32" height="32" loading="lazy" alt="Fashion">
+
+                <p class="btn-text">Fashion</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="tag5.png" width="32" height="32" loading="lazy" alt="Food">
+
+                <p class="btn-text">Food</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="tag6.png" width="32" height="32" loading="lazy" alt="Space">
+
+                <p class="btn-text">Space</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="tag7.png" width="32" height="32" loading="lazy" alt="Animal">
+
+                <p class="btn-text">Animal</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="tag8.png" width="32" height="32" loading="lazy" alt="Minimal">
+
+                <p class="btn-text">Minimal</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="tag9.png" width="32" height="32" loading="lazy" alt="Interior">
+
+                <p class="btn-text">Interior</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="tag10.png" width="32" height="32" loading="lazy" alt="Plant">
+
+                <p class="btn-text">Plant</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="tag11.png" width="32" height="32" loading="lazy" alt="Nature">
+
+                <p class="btn-text">Nature</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <img src="tag12.png" width="32" height="32" loading="lazy" alt="Business">
+
+                <p class="btn-text">Business</p>
+              </button>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RECENT POST
+      -->
+
+      <section class="section recent-post" id="recent" aria-labelledby="recent-label">
+        <div class="container">
+
+          <div class="post-main">
+
+            <h2 class="headline headline-2 section-title">
+              <span class="span">Recent posts</span>
+            </h2>
+
+            <p class="section-text">
+              Don't miss the latest trends
+            </p>
+
+            <ul class="grid-list">
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="recent-post-1.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="recent-post-2.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="recent-post-3.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="recent-post-4.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="recent-post-5.jpg" width="271" height="258" loading="lazy"
+                      alt="Helpful Tips for Working from Home as a Freelancer" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">Working Tips</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">Helpful Tips for Working from Home as a Freelancer</a>
+                    </h3>
+
+                    <p class="card-text">
+                      Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner flapped lynx far that and jeepers giggled far and far
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2"># Travel</a>
+
+                        <a href="#" class="span hover-2"># Lifestyle</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">3 mins read</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <nav aria-label="pagination" class="pagination">
+
+              <a href="#" class="pagination-btn" aria-label="previous page">
+                <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+              </a>
+
+              <a href="#" class="pagination-btn">1</a>
+              <a href="#" class="pagination-btn">2</a>
+              <a href="#" class="pagination-btn">3</a>
+              <a href="#" class="pagination-btn" aria-label="more page">...</a>
+
+              <a href="#" class="pagination-btn" aria-label="next page">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+
+            </nav>
+
+          </div>
+
+          <div class="post-aside grid-list">
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Popular Posts</span>
+              </h3>
+
+              <ul class="popular-list">
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="popular-post-1.jpg" width="64" height="64" loading="lazy"
+                        alt="Creating is a privilege but it’s also a gift" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Creating is a privilege but it’s also a gift</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="popular-post-2.jpg" width="64" height="64" loading="lazy"
+                        alt="Being unique is better than being perfect" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Being unique is better than being perfect</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="popular-post-3.jpg" width="64" height="64" loading="lazy"
+                        alt="Every day, in every city and town across the country" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Every day, in every city and town across the country</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="popular-post-4.jpg" width="64" height="64" loading="lazy"
+                        alt="Your voice, your mind, your story, your vision" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Your voice, your mind, your story, your vision</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="popular-post-2.jpg" width="64" height="64" loading="lazy"
+                        alt="Being unique is better than being perfect" class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">Being unique is better than being perfect</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">15 mins read</p>
+
+                        <time class="publish-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">Last Comment</span>
+              </h3>
+
+              <ul class="comment-list">
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="author-6.png" width="32" height="32" loading="lazy" alt="Jane Cooper">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Jane Cooper</p>
+
+                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="author-7.png" width="32" height="32" loading="lazy" alt="Katen Doe">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Katen Doe</p>
+
+                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ Gosh jaguar ostrich quail one excited dear hello and bound and the and bland moral misheard
+                      roadrunner “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="author-8.png" width="32" height="32" loading="lazy"
+                          alt="Barbara Cartland">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">Barbara Cartland</p>
+
+                        <time class="card-date" datetime="2022-04-15">15 April 2022</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card aside-card insta-card">
+
+              <a href="#" class="logo">
+                <img src="logo.svg" width="119" height="37" loading="lazy" alt="Wren logo">
+              </a>
+
+              <p class="card-text">
+                Follow us on instagram
+              </p>
+
+              <ul class="insta-list">
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="insta-post-1.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="insta-post-2.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="insta-post-3.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="insta-post-4.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="insta-post-5.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="insta-post-6.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="insta-post-7.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="insta-post-8.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="insta-post-9.png" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+    <div class="container">
+
+      <div class="card footer">
+
+        <div class="section footer-top">
+
+          <div class="footer-brand">
+
+            <a href="#" class="logo">
+              <img src="logo.svg" width="119" height="37" loading="lazy" alt="Wren logo">
+            </a>
+
+            <p class="footer-text">
+              When an unknown prnoto sans took a galley and scrambled it to make specimen book not only five When an
+              unknown prnoto sans took a galley and scrambled it to five centurie.
+            </p>
+
+            <p class="footer-list-title">Address</p>
+
+            <address class="footer-text address">
+              123 Main Street <br>
+              New York, NY 10001
+            </address>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Categories</p>
+
+            <ul>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Action</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Business</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Adventure</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Canada</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">America</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Curiosity</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Animal</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Dental</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Biology</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Design</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Breakfast</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-link hover-2">Dessert</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">Newsletter</p>
+
+            <p class="footer-text">
+              Sign up to be first to receive the latest stories inspiring us, case studies, and industry news.
+            </p>
+
+            <div class="input-wrapper">
+              <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
+
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" placeholder="Emaill address" required class="input-field"
+                autocomplete="off">
+
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <a href="#" class="btn btn-primary">
+              <span class="span">Subscribe</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+          <p class="copyright">
+            &copy; Developed by <a href="#" class="copyright-link">codewithsadee.</a>
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+
+                <span class="span">Twitter</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+
+                <span class="span">LinkedIn</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+
+                <span class="span">Instagram</span>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
